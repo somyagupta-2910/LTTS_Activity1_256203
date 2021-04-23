@@ -2,9 +2,9 @@
 
 ## Activity1 Simulation
 
-|ON|OFF|
-|:--:|:--:|
-|![ON](https://github.com/somyagupta-2910/LTTS_Activity1_256203/blob/main/simulation/LEDActuatorON.PNG)|![OFF](https://github.com/somyagupta-2910/LTTS_Activity1_256203/blob/main/simulation/LEDActuatorOff.PNG)|
+|ON|OFF
+|---------|---------
+|![ON](https://github.com/somyagupta-2910/LTTS_Activity1_256203/blob/main/simulation/LEDActuatorON.PNG)|![OFF](https://github.com/somyagupta-2910/LTTS_Activity1_256203/blob/main/simulation/LEDActuatorOff.PNG)
 
 #### CI and Code Quality
 
