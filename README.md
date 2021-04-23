@@ -1,6 +1,6 @@
 # Activity1
 
-# Activity1 Simulation
+## Activity1 Simulation
 
 |ON|OFF|
 |:--:|:--:|
@@ -8,6 +8,6 @@
 
 #### CI and Code Quality
 
-<!-- |Build|Cppcheck|
+|Build|Cppcheck|
 |:--:|:--:|
-|[![Compile-Linux](https://github.com/somyagupta-2910/LTTS_Activity1_256203/actions/workflows/Compile.yml/badge.svg)](https://github.com/somyagupta-2910/LTTS_Activity1_256203/actions/workflows/Compile.yml)|[![Cppcheck](https://github.com/somyagupta-2910/LTTS_Activity1_256203/actions/workflows/CodeQulaity.yml/badge.svg)](https://github.com/Bharathgopal/Emb-C/actions/workflows/CodeQulaity.yml)| -->
+|[![Compile-Linux](https://github.com/somyagupta-2910/LTTS_Activity1_256203/actions/workflows/Compile.yml/badge.svg)](https://github.com/somyagupta-2910/LTTS_Activity1_256203/actions/workflows/Compile.yml)|[![Cppcheck](https://github.com/somyagupta-2910/LTTS_Activity1_256203/actions/workflows/CodeQuality.yml/badge.svg)](https://github.com/somyagupta-2910/LTTS_Activity1_256203/actions/workflows/CodeQuality.yml)|
