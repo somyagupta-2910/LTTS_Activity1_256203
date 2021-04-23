@@ -4,7 +4,7 @@
 
 |ON|OFF|
 |:--:|:--:|
-|![ON](simulation/LEDActuatorON.PNG)|![OFF](simulation/LEDActuatorOff.PNG)|
+|![ON](https://github.com/somyagupta-2910/LTTS_Activity1_256203/simulation/LEDActuatorON.PNG)|![OFF](https://github.com/somyagupta-2910/LTTS_Activity1_256203/simulation/LEDActuatorOff.PNG)|
 
 #### CI and Code Quality
 
