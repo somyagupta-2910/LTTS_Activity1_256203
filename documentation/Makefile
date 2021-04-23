@@ -1,4 +1,4 @@
-DOXY_FILE = ActivityOneDoc
+DOXY_FILE = Doxyfile
 BUILD_FILE = html
 
 FixPath = $(subst /,\,$1)
