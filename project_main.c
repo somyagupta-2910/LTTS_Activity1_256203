@@ -8,19 +8,14 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#include "avrheaders.h"
-/**
- * @brief Initialize of all the respective pin configurations
- * 
- */
-void setup_io_pins(void)
-{
-    DDRB|=(1<<PB0); 
-    DDRD&=~(1<<PD0); 
-    PORTD|=(1<<PD0);
-    DDRC&=~(1<<PC0);
-    PORTC|=(1<<PC0);
-}
+#include "activity1.h"
+#include "activity2.h"
+
+#define SwitchOneOn !(PIND&(1<<PD0))
+#define SwitchTwoOn !(PINC&(1<<PC0))
+
+#define LedOn PORTB|=(1<<PB0)
+#define LedOff PORTB&=~(1<<PB0)
 
 /**
  * @brief Main function where the code execution starts
@@ -30,22 +25,21 @@ void setup_io_pins(void)
 int main(void)
 {
     setup_io_pins();
+    setup_adc_peripheral();
     while(1)
     {
-        if(!(PIND&(1<<PD0)))
+        uint16_t temp;
+        while(1)
         {
-            if(!(PINC&(1<<PC0)))
+            if(SwitchOneOn && SwitchTwoOn)
             {
-                PORTB|=(1<<PB0);
+                LedOn;
+                temp=ReadADC(1);
             }
             else
             {
-                PORTB&=~(1<<PB0);
+                LedOff;
             }
-        }
-        else
-        {
-            PORTB&=~(1<<PB0);
         }
     }
 

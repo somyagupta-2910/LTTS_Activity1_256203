@@ -6,6 +6,12 @@
 |---------|---------
 |![ON](https://github.com/somyagupta-2910/LTTS_Activity1_256203/blob/main/simulation/LEDActuatorON.PNG)|![OFF](https://github.com/somyagupta-2910/LTTS_Activity1_256203/blob/main/simulation/LEDActuatorOff.PNG)
 
+## Activity2 Simulation
+
+|ADC Values
+|---------
+|![ON](https://github.com/somyagupta-2910/LTTS_Activity1_256203/blob/main/simulation/Actvity2_Output.PNG)
+
 #### CI and Code Quality
 
 |Build|Cppcheck|
