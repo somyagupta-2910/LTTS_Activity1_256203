@@ -1,7 +1,7 @@
 /**
  * @file project_main.c
  * @author Somya Gupta
- * @brief This file contains the code to execute the activity one
+ * @brief This file contains the code to execute the entire car seat heater project
  * @version 0.1
  * @date 2021-04-23
  * 
@@ -10,6 +10,7 @@
  */
 #include "activity1.h"
 #include "activity2.h"
+
 
 #define SwitchOneOn !(PIND&(1<<PD0))
 #define SwitchTwoOn !(PINC&(1<<PC0))
