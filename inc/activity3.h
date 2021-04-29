@@ -20,6 +20,12 @@
  */
 void InitPwm(void);
 
-void OutPWM (uint16_t temp_val);
+/**
+ * @brief This function takes the ADC value of potentiometer and generates an output PWM
+ * 
+ * @param temp_val ADC value paased from the potentiometer
+ * @return char returns the temperature value
+ */
+char OutPWM (uint16_t temp_val);
 
 #endif

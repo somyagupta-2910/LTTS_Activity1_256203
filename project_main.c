@@ -11,16 +11,34 @@
 #include "activity1.h"
 #include "activity2.h"
 #include "activity3.h"
+#include "activity4.h"
 
-
+/**
+ * @brief Initializes all the required peripherals
+ * 
+ */
 void peripheral_init(void)
 {
+    /*Calls the function which initializes all the required LED and switch pins*/
     InitLedSwitchPins();
+    /*Calls the function which initializes the ADC pins and registers*/
     InitADC();
+    /*Calls the function which initializes the PWM pins and registers*/
     InitPwm();
+    /*Calls the function which initializes the UART pins and registers*/
+    USARTInit(103);
 }
 
-uint16_t temp;
+/**
+ * @brief An unsigned 16 bit variable which stores the ADC value coming from the potentiometer
+ * 
+ */
+uint16_t temp; 
+/**
+ * @brief Gets the temperature value to be printed in the Serial Monitor
+ * 
+ */
+char temperature_output;
 
 /**
  * @brief Main function where the code execution starts
@@ -29,6 +47,10 @@ uint16_t temp;
  */
 int main(void)
 {
+    /**
+     * @brief Calls the fuction which initialzes all the peripherals
+     * 
+     */
     peripheral_init();
     while(1)
     {
@@ -36,7 +58,8 @@ int main(void)
         {
             LedOn;
             temp=ReadADC(1);
-            OutPWM(temp);
+            temperature_output=OutPWM(temp);
+            USARTWriteChar(temperature_output);
         }
         else
         {

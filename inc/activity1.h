@@ -14,10 +14,26 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
+/**
+ * @brief Macro which closes Switch One
+ * 
+ */
 #define SwitchOneOn !(PIND&(1<<PD0))
+/**
+ * @brief Macro which closes Switch Two
+ * 
+ */
 #define SwitchTwoOn !(PINC&(1<<PC0))
 
+/**
+ * @brief Macro which switches ON LED
+ * 
+ */
 #define LedOn PORTB|=(1<<PB0)
+/**
+ * @brief Macro which switches OFF LED
+ * 
+ */
 #define LedOff PORTB&=~(1<<PB0)
 
 /**

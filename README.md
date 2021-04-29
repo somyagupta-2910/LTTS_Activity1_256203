@@ -1,25 +1,33 @@
 # Car Seatwarmer
 
-## Activity1 Simulation
+## CI and Code Quality
+
+|Build|Cppcheck|
+|:--:|:--:|
+|[![Compile-Linux](https://github.com/somyagupta-2910/LTTS_Activity1_256203/actions/workflows/Compile.yml/badge.svg)](https://github.com/somyagupta-2910/LTTS_Activity1_256203/actions/workflows/Compile.yml)|[![Cppcheck](https://github.com/somyagupta-2910/LTTS_Activity1_256203/actions/workflows/CodeQuality.yml/badge.svg)](https://github.com/somyagupta-2910/LTTS_Activity1_256203/actions/workflows/CodeQuality.yml)|
+
+## Activity1
 
 |ON|OFF
 |---------|---------
 |![ON](https://github.com/somyagupta-2910/LTTS_Activity1_256203/blob/main/simulation/LEDActuatorON.PNG)|![OFF](https://github.com/somyagupta-2910/LTTS_Activity1_256203/blob/main/simulation/LEDActuatorOff.PNG)
 
-## Activity2 Simulation
+## Activity2
 
 |ADC Values
 |---------
-|![ON](https://github.com/somyagupta-2910/LTTS_Activity1_256203/blob/main/simulation/Actvity2_Output.PNG)
+|![ADC Values](https://github.com/somyagupta-2910/LTTS_Activity1_256203/blob/main/simulation/Actvity2_Output.PNG)
 
-## Activity2 Simulation
+## Activity3
 
 |PWM Output
 |---------
-|![ON](https://github.com/somyagupta-2910/LTTS_Activity1_256203/blob/main/simulation/Actvity3.PNG)
+|![PWM OUTPUT](https://github.com/somyagupta-2910/LTTS_Activity1_256203/blob/main/simulation/Activity3.PNG)
 
-#### CI and Code Quality
+## Activity4
 
-|Build|Cppcheck|
-|:--:|:--:|
-|[![Compile-Linux](https://github.com/somyagupta-2910/LTTS_Activity1_256203/actions/workflows/Compile.yml/badge.svg)](https://github.com/somyagupta-2910/LTTS_Activity1_256203/actions/workflows/Compile.yml)|[![Cppcheck](https://github.com/somyagupta-2910/LTTS_Activity1_256203/actions/workflows/CodeQuality.yml/badge.svg)](https://github.com/somyagupta-2910/LTTS_Activity1_256203/actions/workflows/CodeQuality.yml)|
+|Serial Monitor Output
+|---------
+|![PWM OUTPUT](https://github.com/somyagupta-2910/LTTS_Activity1_256203/blob/main/simulation/Activity4.PNG)
+
+
