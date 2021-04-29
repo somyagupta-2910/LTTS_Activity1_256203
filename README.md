@@ -12,6 +12,12 @@
 |---------
 |![ON](https://github.com/somyagupta-2910/LTTS_Activity1_256203/blob/main/simulation/Actvity2_Output.PNG)
 
+## Activity2 Simulation
+
+|PWM Output
+|---------
+|![ON](https://github.com/somyagupta-2910/LTTS_Activity1_256203/blob/main/simulation/Actvity3.PNG)
+
 #### CI and Code Quality
 
 |Build|Cppcheck|

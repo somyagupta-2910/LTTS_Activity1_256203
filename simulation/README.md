@@ -7,8 +7,13 @@
 
 # Actvity2 Simulation Output
 
-## Simulation Outputs
+## Simulation Output
 ![Activity2Output](https://github.com/somyagupta-2910/LTTS_Activity1_256203/blob/main/simulation/Actvity2_Output.PNG)
+
+# Actvity2 Simulation Output
+
+## Simulation Output
+![Activity2Output](https://github.com/somyagupta-2910/LTTS_Activity1_256203/blob/main/simulation/Actvity3.PNG)
 
 
 

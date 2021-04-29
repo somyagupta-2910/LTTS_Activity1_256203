@@ -10,13 +10,17 @@
  */
 #include "activity1.h"
 #include "activity2.h"
+#include "activity3.h"
 
 
-#define SwitchOneOn !(PIND&(1<<PD0))
-#define SwitchTwoOn !(PINC&(1<<PC0))
+void peripheral_init(void)
+{
+    InitLedSwitchPins();
+    InitADC();
+    InitPwm();
+}
 
-#define LedOn PORTB|=(1<<PB0)
-#define LedOff PORTB&=~(1<<PB0)
+uint16_t temp;
 
 /**
  * @brief Main function where the code execution starts
@@ -25,22 +29,19 @@
  */
 int main(void)
 {
-    setup_io_pins();
-    setup_adc_peripheral();
+    peripheral_init();
     while(1)
     {
-        uint16_t temp;
-        while(1)
+        if(SwitchOneOn && SwitchTwoOn)
         {
-            if(SwitchOneOn && SwitchTwoOn)
-            {
-                LedOn;
-                temp=ReadADC(1);
-            }
-            else
-            {
-                LedOff;
-            }
+            LedOn;
+            temp=ReadADC(1);
+            OutPWM(temp);
+        }
+        else
+        {
+            LedOff;
+            OCR1A = 0;
         }
     }
 

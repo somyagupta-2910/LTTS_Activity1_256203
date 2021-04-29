@@ -12,19 +12,19 @@
 #define __ACTIVITY2_H_
 
 #include <avr/io.h>
-#include<util/delay.h>
+#include <util/delay.h>
 
 /**
- * @brief Intializing ADC
+ * @brief ADC Initization
  * 
  */
-void setup_adc_peripheral(void);
+void InitADC();
 
 /**
- * @brief This function is used to select the channel  for ADC
+ * @brief The channel is selected for ADC readings
  * 
- * @param ch specifies the channel number
- * @return uint16_t specifies that the return type is an unsigned integer
+ * @param ch The channel to be selected is given as input to this variable
+ * @return uint16_t The return type is an usigned 16 bit
  */
 uint16_t ReadADC(uint8_t ch);
 

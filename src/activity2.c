@@ -1,3 +1,13 @@
+/**
+ * @file activity2.c
+ * @author Somya Gupta
+ * @brief The ADC values of potentiometer are read
+ * @version 0.1
+ * @date 2021-04-29
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include "activity2.h"
 
 void InitADC()
@@ -18,10 +28,5 @@ uint16_t ReadADC(uint8_t ch)
 
     ADCSRA|=(1<<ADIF);
     return(ADC);
-}
-
-void setup_adc_peripheral(void)
-{
-    InitADC();
 }
 
